@@ -1,15 +1,14 @@
 <p>
-<img src="https://repository-images.githubusercontent.com/54369221/b098cf00-afb4-11ea-89fb-fb4d2c505130" alt="jqwik" height="290"/>  
-<img src="https://www.kloia.com/hubfs/java-1.png" alt="Java" height="300"/>
+  <img src="https://repository-images.githubusercontent.com/54369221/b098cf00-afb4-11ea-89fb-fb4d2c505130" alt="jqwik" height="290"/>  
+  <img src="https://www.kloia.com/hubfs/java-1.png" alt="Java" height="300"/>
 </p>
 
 Property based testing in java with jqwik
 =============
-[![Java21](https://img.shields.io/badge/java-21-brightgreen.svg)](https://www.python.org/)
-[![Junit5](https://img.shields.io/badge/junit-5.10.2-yellow.svg)](https://docs.pytest.org/en/latest/)
-[![AssertJ3](https://img.shields.io/badge/AssertJ-3.25.3-blue.svg)](https://hypothesis.readthedocs.io/en/latest/)
-[![Maven3](https://img.shields.io/badge/Maven-3.3.0-orange.svg)](https://pypi.org/project/pytest-xdist/)
-
+[![Java21](https://img.shields.io/badge/java-21-brightgreen.svg)](https://openjdk.org/projects/jdk/21/)
+[![Junit5](https://img.shields.io/badge/junit-5.10.2-yellow.svg)](https://junit.org/junit5/)
+[![AssertJ3](https://img.shields.io/badge/AssertJ-3.25.3-blue.svg)](https://assertj.github.io/doc/)
+[![Maven3](https://img.shields.io/badge/Maven-3.3.0-orange.svg)](https://maven.apache.org/)
 
 ## Introduction
 
@@ -52,10 +51,11 @@ mvn clean install
 3. Running the main examples:
 
 ```bash
-java -jar ./target/password-hashing-security.jar
+java -jar ./target/java-property-based-testing-jqwik.jar
 ```
 
-4. This project is using Java 21, if you want to run it with a previous version, modify the pom.xml and compile to your preferred version:
+4. This project is using Java 21, if you want to run it with a previous version, modify the pom.xml and compile to your
+   preferred version:
 
 ```bash
 <maven.compiler.source>21</maven.compiler.source>
@@ -70,10 +70,6 @@ java -jar ./target/password-hashing-security.jar
 * E-mail: wallace.espindola@gmail.com
 * LinkedIn: https://www.linkedin.com/in/wallaceespindola/
 * Website: https://wtechitsolutions.com/
-
-## Article published
-
-* Dzone, December/2023: https://dzone.com/articles/secure-password-hashing-in-java
 
 ## License
 
