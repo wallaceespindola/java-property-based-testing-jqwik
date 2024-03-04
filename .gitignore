@@ -1,14 +1,5 @@
-# Compiled class file
-*.class
-
-# Log file
+# Log files
 *.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
 
 # Package Files #
 *.jar
@@ -22,3 +13,45 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+# Compiled and temporarily generated files
+*.class
+/target
+dependency-reduced-pom.xml
+
+# Visual Studio Code specific files
+.vscode
+.settings
+.project
+*.code-workspace
+
+# Jenv file for specifying the project java version
+.java-version
+
+# Gradle
+.gradle
+build/
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Eclipse
+.classpath
+.settings/
+.project
+bin/
+
+# IntelliJ
+*.iml
+*.ipr
+*.iws
+*.uml
+.shelf
+.idea/
+out/
+
+# Misc
+*.graphml
+
+# Mac
+.DS_Store
