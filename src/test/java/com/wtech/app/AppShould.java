@@ -1,4 +1,4 @@
-package $
+package com.wtech.app;
 
 import org.junit.jupiter.api.Test;
 

@@ -1,9 +1,11 @@
-package $
+package com.wtech.app;
 
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 public class AppTest {
 
@@ -20,6 +22,6 @@ public class AppTest {
         String test = "test";
         assertNotNull(test, "String value should not be null");
         assertFalse(test.isEmpty(), "String value should not be empty");
-        assertTrue(test.equals("test")), "Strings must be equal");
+        assertEquals("test", test, "Strings must be equal");
     }
 }
