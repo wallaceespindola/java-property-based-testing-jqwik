@@ -6,23 +6,20 @@
 Property based testing in java with jqwik
 =============
 [![Java21](https://img.shields.io/badge/java-21-brightgreen.svg)](https://openjdk.org/projects/jdk/21/)
+[![Jqwik1.8](https://img.shields.io/badge/jqwik-1.8.3-orange.svg)](https://maven.apache.org/)
 [![Junit5](https://img.shields.io/badge/junit-5.10.2-yellow.svg)](https://junit.org/junit5/)
 [![AssertJ3](https://img.shields.io/badge/AssertJ-3.25.3-blue.svg)](https://assertj.github.io/doc/)
-[![Maven3](https://img.shields.io/badge/Maven-3.3.0-orange.svg)](https://maven.apache.org/)
+[![Maven3](https://img.shields.io/badge/Maven-3.3.0-purple.svg)](https://maven.apache.org/)
 
 ## Introduction
 
-This project is dedicated to testing and validating various scenarious using property based testing in Java. It
+This project is dedicated to testing and validating various scenarios using property based testing in Java. It
 showcases different algorithms and their usage, providing a practical insight into property based testing with jqwik.
 
 ## Examples
-
-* [SHA256Hashing.java](src%2Fmain%2Fjava%2Fcom%2Fwtech%2Fcore%2Fhashing%2FSHA256Hashing.java): Utilizes the SHA-256
-  algorithm for hashing passwords. It's a part of the SHA-2 family of cryptographic hash functions but is generally not
-  recommended for password hashing due to its speed and susceptibility to brute-force attacks.
-* [SHA512Hashing.java](src%2Fmain%2Fjava%2Fcom%2Fwtech%2Fcore%2Fhashing%2FSHA512Hashing.java): Employs the SHA-512
-  algorithm. While more secure than SHA-256 due to a larger hash size, it shares similar limitations for password
-  security.
+* [NormalValuesTest.java](src%2Ftest%2Fjava%2Fcom%2Fwtech%2Fapp%2FNormalValuesTest.java): A basic standard unit test.
+* [ParameterizedValuesTest.java](src%2Ftest%2Fjava%2Fcom%2Fwtech%2Fapp%2FParameterizedValuesTest.java): A parametrized unit test. That means we use more data, in order to try to cover more scenarios in the tests.
+* [JqwikPropertyBasedTest.java](src%2Ftest%2Fjava%2Fcom%2Fwtech%2Fapp%2FJqwikPropertyBasedTest.java): Property based tests using jqwik for implementation. In those tests you will be able to see many examples to test a wide range of data.
 
 ## Prerequisites
 
@@ -51,7 +48,7 @@ mvn clean install
 3. Running the main examples:
 
 ```bash
-java -jar ./target/java-property-based-testing-jqwik.jar
+mvn test
 ```
 
 4. This project is using Java 21, if you want to run it with a previous version, modify the pom.xml and compile to your
