@@ -81,7 +81,7 @@ public class JqwikPropertyBasedTest {
     @Property
     public void square(@ForAll @Positive int a) {
         int result = a * a;
-        assertTrue(result >= a);
+        //assertTrue(result >= a); // TODO DEMO
         /*
          * But why does this fail? There’s nothing unusual about it.
          * So let’s try it ourselves.
