@@ -27,6 +27,13 @@ public class ParameterizedValuesTest {
     }
 
     @ParameterizedTest
+    @MethodSource("provideIntegerInputs")
+    void testDivisionBySelfAll(int input) {
+        int answer = App.divide(input, input);
+        assertEquals(answer, 1);
+    }
+
+    @ParameterizedTest
     @MethodSource("providePositiveIntegerInputs")
     void testDivisionBySelfPositive(int input) {
         int answer = App.divide(input, input);
@@ -50,7 +57,8 @@ public class ParameterizedValuesTest {
 
     private static Stream<Arguments> provideIntegerInputs() { // A LONG RUNNING POSSIBILITY
         return IntStream
-                .rangeClosed(Integer.MIN_VALUE, Integer.MAX_VALUE)
+                //.rangeClosed(Integer.MIN_VALUE, Integer.MAX_VALUE) // ATTENTION: TOO LONG TEST TO RUN, MAY CAUSE MEMORY OVERFLOW
+                .rangeClosed(-30, 30)
                 .mapToObj(Arguments::of);
     }
 }

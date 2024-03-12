@@ -40,7 +40,7 @@ basic to advanced scenarios.
   files.
 * Or simply run it in command line.
 
-## How to Run
+## How to run
 
 1. Clone and go to the repository:
 
