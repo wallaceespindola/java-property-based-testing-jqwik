@@ -98,6 +98,7 @@ minimal scenario that triggers the bug, making it easier to understand and fix.
 * A PBT java tutorial: https://www.baeldung.com/java-jqwik-property-based-testing
 * Property testing definition: https://en.wikipedia.org/wiki/Property_testing
 * Kotest, a test framework with PBT integrated: https://kotest.io/docs/proptest/property-based-testing.html
+* What is PBT, another point of view: https://hypothesis.works/articles/what-is-property-based-testing/
 
 ## Author
 
