@@ -25,6 +25,7 @@ import java.util.stream.Collectors;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
@@ -321,7 +322,7 @@ public class JqwikPropertyBasedTest {
 
     @Property
     //@Report(Reporting.GENERATED)
-    public void testUTF8String(@ForAll("utf8Strings") String input) {
+    public void testUTF8Strings(@ForAll("utf8Strings") String input) {
         System.out.println("Generated UTF-8 String: " + input);
         assertFalse(input.isEmpty());
     }
@@ -338,5 +339,17 @@ public class JqwikPropertyBasedTest {
                 .withCharRange((char) 0x0020, (char) 0x007E) // Range of Unicode code points
                 .ofMinLength(1)
                 .ofMaxLength(50);
+    }
+
+    @Property
+    //@Report(Reporting.GENERATED)
+    public void testAsciiStrings(@ForAll("asciiStrings") String input) {
+        System.out.println("Generated ASCII String: " + input);
+        assertNotNull(input);
+    }
+
+    @Provide
+    Arbitrary<String> asciiStrings() {
+        return Arbitraries.strings().ascii();
     }
 }
